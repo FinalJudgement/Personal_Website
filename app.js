@@ -31,6 +31,7 @@ const vanishHeaderContent = () => {
 const contentAppear = () => {
   main.style.opacity = 1;
   overflowController.style.overflowY = "scroll";
+  header.style.minHeight = 0;
 };
 
 enterBtn.addEventListener("click", function () {
