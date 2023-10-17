@@ -1,0 +1,411 @@
+body {
+  margin: 0;
+  font-family: "Averta", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #7f1de0;
+  transition: all 2s;
+  height: 10%;
+}
+
+header span {
+  color: white;
+  font-family: "Averta", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  padding: 0 50px;
+}
+
+nav li {
+  padding: 0 40px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid transparent;
+  padding: 5px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+  transition: 0.5s;
+}
+
+/* Custom css for icon logo */
+#css-logo-span {
+  margin: 13px;
+}
+
+#css-logo-container {
+  transform: scale(0.4);
+}
+.css-logo {
+  position: absolute;
+}
+
+#div1 {
+  height: 100px;
+  width: 90px;
+  background-color: white;
+}
+#div2 {
+  height: 80px;
+  width: 100px;
+  background-color: #7f1de0;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  top: 12px;
+  left: 30px;
+}
+
+#div3 {
+  height: 66px;
+  width: 90px;
+  background-color: white;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  top: 19px;
+  left: 40px;
+}
+
+#div4 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  left: 85px;
+}
+
+#div5 {
+  height: 48px;
+  width: 80px;
+  background-color: #7f1de0;
+  top: 44px;
+  left: 85px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+#div6 {
+  height: 42px;
+  width: 50px;
+  background-color: #7f1de0;
+  top: 12px;
+  left: 114px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+#div7 {
+  height: 31px;
+  width: 50px;
+  background-color: white;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  top: 54px;
+  left: 105px;
+}
+
+#div8 {
+  height: 31px;
+  width: 50px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  top: 18px;
+  left: 125px;
+}
+
+#div9 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 100px;
+  top: 43px;
+  left: 60px;
+}
+
+/* nav hamburger */
+
+.burger-container {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+}
+
+.burger-container:hover {
+  background-color: #42f64a;
+}
+
+#line1 {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  top: 33%;
+  margin: 3px auto;
+  background-color: black;
+  border-radius: 10px;
+  #background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+  }
+
+  .container {
+    position: relative;
+    background-color: white;
+    left: 50px;
+    top: 50px;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+  }
+
+  #line1 {
+    position: relative;
+    width: 22px;
+    height: 3px;
+    top: 33%;
+    margin: 3px auto;
+    background-color: black;
+    border-radius: 10px;
+  }
+  #line2 {
+    position: relative;
+    width: 22px;
+    height: 3px;
+    top: 33%;
+    margin: 3px auto;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  #line3 {
+    position: relative;
+    width: 22px;
+    height: 3px;
+    top: 33%;
+    margin: 3px auto;
+    background-color: black;
+    border-radius: 10px;
+  }
+}
+#line2 {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  top: 33%;
+  margin: 3px auto;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#line3 {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  top: 33%;
+  margin: 3px auto;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.bot-nav {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+/* custom splash art photo */
+#logo-art {
+  height: 280px;
+  width: 200px;
+  background-image: url("assets/LosPic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: white;
+  align-self: center;
+  margin: 20px;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.greeting-container {
+  width: 200px;
+  height: 100px;
+  transition: all 1s;
+}
+
+.greeting1 {
+  position: absolute;
+  font-size: 50px;
+  margin: 20px;
+  opacity: 0;
+  animation-name: greet1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes greet1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.greeting2 {
+  position: absolute;
+  font-size: 50px;
+  margin: 20px;
+  opacity: 1;
+  animation-name: greet2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes greet2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Divider with animation */
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.divider {
+  position: relative;
+  background-color: #7f1de0;
+  width: 200%;
+  padding: 50px;
+  --mask: radial-gradient(
+        83.01px at 50% calc(100% - 114.75px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 90px) 0/180px 100%,
+    radial-gradient(83.01px at 50% calc(100% + 69.75px), #0000 99%, #000 101%)
+      50% calc(100% - 45px) / 180px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+@keyframes example {
+  0% {
+    background-color: #7f1de0;
+    left: -200px;
+    top: 0px;
+  }
+  50% {
+    background-color: #7f1de0;
+    left: -110px;
+    top: 0px;
+  }
+  100% {
+    background-color: #7f1de0;
+    left: -20px;
+    top: 0px;
+  }
+}
+
+main {
+  margin: 0 10%;
+}
+.btn-begin {
+  width: 300px;
+  height: 100px;
+  margin: 50px auto;
+}
+
+.btn-begin button {
+  width: 100%;
+  height: 100%;
+  background-color: #a765ea;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.btn-begin button:hover {
+  background-color: #3a0d66;
+}
+
+#about-me {
+  background-color: White;
+  border-radius: 0 0 10px 10px;
+  width: 40%;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 8px 1px;
+}
+
+#about-me h2 {
+  text-align: center;
+  width: 50%;
+  height: auto;
+  background-color: #a765ea;
+  color: rgb(46, 46, 46);
+}
+
+#about-me p {
+  margin: 30px;
+  font-size: 1.2rem;
+}
+
+footer {
+  width: 80%;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #3a0d66;
+}
