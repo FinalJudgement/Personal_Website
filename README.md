@@ -1,4 +1,5 @@
-a personal portfolio website
+This project is a personal resume website. The intent of this website is to showcase the creators proven ability through
+styling, content, and examples.
 
 Website Must Include
 -Index page
@@ -10,5 +11,3 @@ All pages must include
 -navbar with nav links
 -personalized content
 -css styling
-
-Index.html must include the following

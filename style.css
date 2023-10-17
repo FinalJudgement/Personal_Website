@@ -397,7 +397,9 @@ main {
 }
 
 .summary p {
+  max-width: 800px;
   font-size: 1.5rem;
+  color: #555;
 }
 
 #profile-img img {
@@ -432,6 +434,11 @@ section p {
   background-color: #3a0d66;
 }
 
+.quote-section {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 q {
   font-size: 4rem;
   color: #7f1de0;
@@ -464,6 +471,7 @@ footer {
 
 .portfolio p {
   font-size: 1.4rem;
+  color: #555;
 }
 
 .portfolio a {
@@ -488,4 +496,15 @@ footer {
 .portfolio img:hover {
   transition: 0.5s;
   color: #7f1de0;
+}
+
+/* styling for the about me page */
+
+.about h2 {
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.4rem;
+  color: #555;
 }
