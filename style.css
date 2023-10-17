@@ -21,7 +21,8 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #7f1de0;
-  min-height: 450px;
+  min-height: 100px;
+  /* max-height: 100px; */
   height: 10%;
   z-index: 2;
 }
@@ -462,6 +463,11 @@ footer {
 
 /* Portfolio page specific */
 
+.project {
+  height: 700px;
+  /* width: 80%; */
+}
+
 .portfolio div {
   margin: 100px 0;
 }
@@ -493,7 +499,8 @@ footer {
 }
 
 .portfolio img {
-  height: 500px;
+  max-height: 500px;
+  width: 100%;
   box-shadow: 0 2px 20px 1px;
   color: black;
 }
@@ -512,4 +519,8 @@ footer {
 .about p {
   font-size: 1.4rem;
   color: #555;
+}
+
+.stop-nav-bleed {
+  max-height: 100px;
 }

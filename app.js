@@ -5,6 +5,7 @@ const greeting = document.querySelector(".greeting-container");
 const quoteblock = document.querySelector("#quoteblock");
 const main = document.querySelector("main");
 const overflowController = document.querySelector("html, body, main");
+header.style.minHeight = 450;
 
 const dropCurtain = (_callback) => {
   header.style.height = `${92}%`;
@@ -17,6 +18,7 @@ const dropCurtain = (_callback) => {
 const liftCurtain = () => {
   dropCurtain(function () {
     header.style.height = `${10}%`;
+    header.style.minHeight = 100;
     contentAppear();
   });
 };
@@ -31,7 +33,6 @@ const vanishHeaderContent = () => {
 const contentAppear = () => {
   main.style.opacity = 1;
   overflowController.style.overflowY = "scroll";
-  header.style.minHeight = 0;
 };
 
 enterBtn.addEventListener("click", function () {
