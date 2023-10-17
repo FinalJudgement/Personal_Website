@@ -12,6 +12,11 @@
     <title>Carlos | Portfolio</title>
     <script src="app.js" defer></script>
     <style>
+      html,
+      body,
+      main {
+        overflow-y: hidden;
+      }
       header {
         display: flex;
         flex-direction: column;
@@ -72,9 +77,30 @@
     <div class="wrapper">
       <div class="divider"></div>
     </div>
+    <div class="btn-begin"><button>Enter</button></div>
     <main>
-      <div class="btn-begin"><button>Enter</button></div>
+      <section class="summary">
+        <div>
+          <h1>Fullstack Developer, Artist, Musician</h1>
+          <p>
+            Passionate fullstack developer with a track record of crafting
+            exceptional web applications that blend functionality and aesthetics
+            seamlessly.
+          </p>
+        </div>
+        <div id="profile-img">My Image Here</div>
+      </section>
+      <section class="quote-section">
+        <p id="quoteblock">
+          <q cite="Paulo Coelho"
+            >When we strive to become better than we are, everything around us
+            becomes better too.</q
+          >
+          <em>— Paulo Coelho</em>
+        </p>
+      </section>
     </main>
+
     <!-- <footer></footer> -->
     <script src="app.js"></script>
   </body>
