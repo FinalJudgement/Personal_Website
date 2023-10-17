@@ -11,7 +11,7 @@ const dropCurtain = (_callback) => {
   setTimeout(() => {
     _callback();
     vanishHeaderContent();
-  }, 1700);
+  }, 1400);
 };
 
 const liftCurtain = () => {

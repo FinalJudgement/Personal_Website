@@ -389,7 +389,7 @@ main {
 
 .summary {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .summary h1 {
@@ -400,12 +400,9 @@ main {
   font-size: 1.5rem;
 }
 
-#profile-img {
-  background-color: grey;
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  padding: 150 100;
+#profile-img img {
+  height: 500px;
+  margin-left: 30px;
 }
 section {
   padding: 50px;
@@ -433,9 +430,6 @@ section p {
 
 .btn-begin button:hover {
   background-color: #3a0d66;
-}
-
-#quoteblock {
 }
 
 q {
