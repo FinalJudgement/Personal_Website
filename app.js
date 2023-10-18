@@ -16,7 +16,6 @@ const vanishHeaderContent = () => {
   bannerImg.style.visibility = "hidden";
   greeting.style.opacity = 0;
   greeting.style.visibility = "hidden";
-  botNav.style.display = "none";
 };
 
 const dropCurtain = (_callback) => {
@@ -25,6 +24,9 @@ const dropCurtain = (_callback) => {
     _callback();
     vanishHeaderContent();
   }, 1400);
+  setTimeout(() => {
+    botNav.style.display = "none";
+  }, 2500);
 };
 
 const contentAppear = () => {
