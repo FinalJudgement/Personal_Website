@@ -10,7 +10,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Carlos | Portfolio</title>
-    <script src="app.js" defer></script>
     <style>
       html,
       body,
@@ -20,14 +19,6 @@
 
       main {
         opacity: 0;
-      }
-
-      header {
-        display: flex;
-        flex-direction: column;
-        background-color: #7f1de0;
-        transition: all 1.5s;
-        height: 44.5%;
       }
     </style>
   </head>
@@ -52,23 +43,23 @@
             </div>
           </a>
         </span>
+        <div class="ul-mask"></div>
 
-        <!-- html for the custom hamburger -->
-        <!-- <span id="logo-icon">
-          <a href="">
-            <div class="burger-container">
-              <div id="line1"></div>
-              <div id="line2"></div>
-              <div id="line3"></div>
-            </div>
-          </a>
-        </span> -->
-        <ul>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <!-- html for the custom hamburger -->
+        <span id="logo-icon">
+          <div class="burger-nav">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+          </div>
+        </span>
       </nav>
 
       <div class="bot-nav">
@@ -82,7 +73,7 @@
     <div class="wrapper">
       <div class="divider"></div>
     </div>
-    <div class="btn-begin"><button>Enter</button></div>
+    <div class="btn-begin"><button onclick="enterButton()">Enter</button></div>
     <main>
       <section class="summary">
         <div>

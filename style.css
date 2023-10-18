@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Averta", sans-serif;
+  overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -17,14 +18,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 header {
+  transition: all 1.5s;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: #7f1de0;
-  min-height: 100px;
-  /* max-height: 100px; */
   height: 10%;
-  z-index: 2;
+  min-height: 150px;
+  z-index: 1;
 }
 
 header span {
@@ -32,7 +33,17 @@ header span {
   font-family: "Averta", sans-serif;
 }
 
+.ul-mask {
+  position: relative;
+  top: -55px;
+  width: 100px;
+  height: 159px;
+  background-color: #7f1de0;
+  z-index: 2;
+}
+
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 50px 80px;
@@ -40,6 +51,7 @@ nav {
 }
 
 nav ul {
+  position: relative;
   color: white;
   display: flex;
   padding: 0 50px;
@@ -57,6 +69,7 @@ nav a {
   color: white;
   border-bottom: 3px solid transparent;
   padding: 5px;
+  text-align: center;
 }
 
 nav a:hover {
@@ -66,14 +79,18 @@ nav a:hover {
 
 /* Custom css for icon logo */
 #css-logo-span {
-  margin: 13px;
+  position: relative;
+  margin: 7px;
+  z-index: 3;
 }
 
 #css-logo-container {
   transform: scale(0.4);
+  z-index: 2;
 }
 .css-logo {
   position: absolute;
+  z-index: 2;
 }
 
 #div1 {
@@ -161,14 +178,16 @@ nav a:hover {
 
 /* nav hamburger */
 
-.burger-container {
+.burger-nav {
+  position: relative;
   background-color: white;
   width: 45px;
   height: 45px;
   border-radius: 4px;
+  z-index: 2;
 }
 
-.burger-container:hover {
+.burger-nav:hover {
   background-color: #42f64a;
 }
 
@@ -256,6 +275,7 @@ nav a:hover {
 /* custom splash art photo */
 #logo-art {
   position: relative;
+  top: -90px;
   height: 280px;
   width: 200px;
   background-image: url("assets/LosPic.jpg");
@@ -268,13 +288,15 @@ nav a:hover {
   align-self: center;
   margin: 20px;
   transition: all 1s;
-  z-index: 3;
+  z-index: 0;
 }
 
 .greeting-container {
+  position: relative;
   width: 200px;
   height: 100px;
   transition: all 1s;
+  top: -100px;
 }
 
 .greeting1 {
@@ -337,12 +359,11 @@ nav a:hover {
   top: -5px;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
 }
 
 .divider {
   background-color: #7f1de0;
-
   width: 200%;
   padding: 50px;
   --mask: radial-gradient(
@@ -361,7 +382,6 @@ nav a:hover {
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: infinite;
-  z-index: 1;
 }
 
 @keyframes example {
@@ -383,7 +403,7 @@ nav a:hover {
 }
 
 main {
-  top: 300px;
+  top: 100px;
   position: absolute;
   width: 80%;
   left: 50%;
@@ -391,11 +411,14 @@ main {
   padding: 50px;
   z-index: 0;
   opacity: 1;
+  z-index: -1;
 }
 
 .summary {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .summary h1 {
@@ -409,8 +432,10 @@ main {
 }
 
 #profile-img img {
-  height: 500px;
+  max-height: 600px;
   margin-left: 30px;
+  max-width: 500px;
+  width: 100%;
 }
 section {
   padding: 50px;
@@ -443,10 +468,11 @@ section p {
 .quote-section {
   margin: 0 auto;
   max-width: 1500px;
+  text-align: center;
 }
 
 q {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #7f1de0;
 }
 
@@ -500,6 +526,7 @@ footer {
 
 .portfolio img {
   max-height: 500px;
+  max-width: 900px;
   width: 100%;
   box-shadow: 0 2px 20px 1px;
   color: black;
@@ -523,4 +550,70 @@ footer {
 
 .stop-nav-bleed {
   max-height: 100px;
+}
+
+@media only screen and (min-width: 850px) {
+  .burger-nav {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .burger-nav {
+    display: block;
+  }
+
+  nav ul {
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space;
+    align-items: center;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-color: #7f1de0;
+    width: 100%;
+    padding: 0;
+    transition: all 1.2s;
+    z-index: 1;
+  }
+  .nav-effect {
+    top: 160px;
+  }
+
+  nav li {
+    padding: 10px 0px 10px 0;
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    border-bottom: 3px solid transparent;
+  }
+
+  nav a:hover {
+    border-bottom: 3px solid white;
+  }
+  #css-logo-span {
+    margin: 24px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .summary {
+    flex-direction: column;
+  }
+  q {
+    font-size: 2rem;
+  }
+
+  #profile-img img {
+    margin: 0;
+  }
+}
+
+.header-effect {
+  min-height: 450px;
 }

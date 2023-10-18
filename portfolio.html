@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Porfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -21,12 +24,21 @@
             </div>
           </a>
         </span>
-        <ul>
+        <div class="ul-mask"></div>
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <!-- html for the custom hamburger -->
+        <span id="logo-icon">
+          <div class="burger-nav">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+          </div>
+        </span>
       </nav>
     </header>
     <div class="wrapper">
@@ -88,5 +100,6 @@
       </section>
     </main>
     <!-- <footer></footer> -->
+    <script src="app.js"></script>
   </body>
 </html>
