@@ -489,8 +489,8 @@ footer {
 /* Portfolio page specific */
 
 .project {
-  height: 700px;
-  /* width: 80%; */
+  /* height: 700px; */
+  width: 80%;
 }
 
 .portfolio div {
