@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Averta", sans-serif;
-  overflow: hidden;
 }
 
 body::-webkit-scrollbar {
