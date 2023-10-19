@@ -55,3 +55,7 @@ const navToggle = () => {
 navBurger.addEventListener("click", function () {
   navToggle();
 });
+
+setTimeout(() => {
+  liftCurtain();
+}, 4500);

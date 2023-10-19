@@ -294,7 +294,7 @@ nav a:hover {
   position: relative;
   width: 200px;
   height: 100px;
-  transition: all 1s;
+  transition: all 0.5s;
   top: -100px;
 }
 
@@ -304,7 +304,7 @@ nav a:hover {
   margin: 20px;
   opacity: 0;
   animation-name: greet1;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -331,7 +331,7 @@ nav a:hover {
   margin: 20px;
   opacity: 1;
   animation-name: greet2;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: 1;
@@ -437,7 +437,7 @@ main {
   width: 100%;
 }
 section {
-  padding: 50px;
+  padding: 80px 50px;
   z-index: 0;
 }
 section p {
@@ -515,7 +515,6 @@ footer {
 .portfolio a:hover {
   color: rgb(242, 0, 255);
   transition: 0.5s;
-  border-bottom: 3px solid rgb(242, 0, 255);
 }
 
 .portfolio img {
@@ -524,11 +523,13 @@ footer {
   width: 100%;
   box-shadow: 0 2px 20px 1px;
   color: black;
+  transition: 0.5s;
 }
 
 .portfolio img:hover {
-  transition: 0.5s;
+  transition: all 0.5s;
   color: #7f1de0;
+  transform: scale(1.1);
 }
 
 /* styling for the about me page */
