@@ -274,6 +274,7 @@ nav a:hover {
 /* custom splash art photo */
 #logo-art {
   position: relative;
+  left: 15px;
   top: -90px;
   height: 280px;
   width: 200px;
@@ -327,6 +328,7 @@ nav a:hover {
 
 .greeting2 {
   position: absolute;
+  width: 500px;
   font-size: 50px;
   margin: 20px;
   opacity: 1;
@@ -559,6 +561,15 @@ footer {
 @media only screen and (max-width: 850px) {
   .burger-nav {
     display: block;
+  }
+
+  .greeting1 {
+    font-size: 2rem;
+  }
+
+  .greeting2 {
+    font-size: 2rem;
+    max-width: 200px;
   }
 
   nav ul {
