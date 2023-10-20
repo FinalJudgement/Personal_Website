@@ -490,6 +490,9 @@ footer {
 }
 
 /* Portfolio page specific */
+.portfolio {
+  padding-top: 130px;
+}
 
 .portfolio div {
   margin: 100px 0;
@@ -537,8 +540,12 @@ footer {
 
 /* styling for the about me page */
 
+.about {
+  padding-top: 130px;
+}
+
 .about h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .about p {
