@@ -378,14 +378,14 @@ nav a:hover {
   -webkit-mask: var(--mask);
   mask: var(--mask);
   position: relative;
-  animation-name: example;
+  animation-name: curtain-effect;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-delay: 0s;
   animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes curtain-effect {
   0% {
     background-color: #7f1de0;
     left: -200px;
@@ -409,7 +409,7 @@ main {
   width: 80%;
   left: 50%;
   transform: translate(-50%);
-  padding: 50px;
+  padding: 20px;
   z-index: 0;
   opacity: 1;
   z-index: -1;
@@ -547,6 +547,120 @@ footer {
 
 .stop-nav-bleed {
   max-height: 100px;
+}
+
+/* styling for the contact page */
+
+.contact section {
+  position: relative;
+  background-color: rgb(214, 201, 255);
+  margin: 0 auto;
+  /* height: 500px; */
+  max-width: 800px;
+  top: 13rem;
+  border-radius: 10px;
+}
+
+.contact article {
+  overflow: hidden !important;
+  position: relative;
+  background-color: #ffffff;
+  /* max-height: 500px; */
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  padding: 5px 0;
+  border-radius: 10px;
+  border-top: 5px solid rgb(155, 79, 213);
+  left: 0;
+  right: 0;
+  animation: bounce 1.5s infinite;
+}
+
+.title {
+  display: block;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+
+.contact article h2 {
+  font-size: 2em;
+}
+
+.contact article p {
+  color: grey;
+}
+
+.form-entry {
+  background-color: #ebebeb;
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.form-entry:hover {
+  border-bottom: 5px solid rgb(155, 79, 213);
+  width: 380px;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: rgb(155, 79, 213);
+  font-size: 1.3em;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid rgb(155, 79, 213);
+  border-radius: 0%;
+  border-bottom: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 2px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 2px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .form-entry {
+    min-width: 100px;
+    padding: 5px;
+  }
+  .form-entry:hover {
+    border-bottom: 5px solid rgb(155, 79, 213);
+    width: 190px;
+  }
+
+  .title {
+    display: block;
+    margin: 10px auto 5px;
+    width: 180px;
+  }
+
+  .contact article h2 {
+    font-size: 1.5em;
+  }
+  .contact article p {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 850px) {
